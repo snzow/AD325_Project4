@@ -8,7 +8,7 @@ import adtpackage.*;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-class Vertex<T> implements VertexInterface<T>
+public class Vertex<T> implements VertexInterface<T>
 {
     private T label;
     private ListWithIteratorInterface<Edge> edgeList; // Edges to neighbors

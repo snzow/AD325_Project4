@@ -40,6 +40,11 @@ public class ProfileManager {
 
     }
 
+    public void createProfile(String username, String password){
+        Profile newUser = new Profile(username,password);
+
+    }
+
     public UndirectedGraph<UserID> getUserGraph() {
         return userGraph;
     }

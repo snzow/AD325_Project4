@@ -2,10 +2,10 @@ import java.util.Random;
 
 public class Main {
 
-    static ProfileManager SESSION;
+    static Network network;
     public static void main(String[] args) {
-        SESSION = new ProfileManager();
-        SESSION.createProfile();
+        network = new Network();
+
     }
 
     /**

@@ -1,6 +1,11 @@
+import graphpackage.Vertex;
+import graphpackage.VertexInterface;
+
 public class Profile {
 
     private UserID id;
+
+    private VertexInterface node;
     private int age;
     private String username;
     private String password;
@@ -59,5 +64,9 @@ public class Profile {
 
     public UserID getID(){
         return id;
+    }
+
+    public void profileMenu(){
+
     }
 }

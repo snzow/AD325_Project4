@@ -1,33 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1c3b1ec-3629-46b9-af31-1b1f52e1f4f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProfileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/DictionaryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/EmptyQueueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/HeapPriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/LinkedListWithIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/LinkedQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/LinkedStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/ListInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/ListWithIteratorInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/MaxHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/MaxHeapInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/PriorityQueueInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/QueueInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/StackInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adtpackage/UnsortedLinkedDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphpackage/BasicGraphInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphpackage/DirectedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphpackage/GraphAlgorithmsInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphpackage/GraphInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphpackage/UndirectedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphpackage/Vertex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphpackage/VertexInterface.java" afterDir="false" />
+    <list default="true" id="e1c3b1ec-3629-46b9-af31-1b1f52e1f4f6" name="Changes" comment="first work">
+      <change afterPath="$PROJECT_DIR$/src/Network.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProfileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProfileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphpackage/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphpackage/Vertex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,14 +35,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,8 +51,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669860372067</updated>
-      <workItem from="1669860373779" duration="4411000" />
+      <workItem from="1669860373779" duration="4693000" />
+      <workItem from="1670553366689" duration="3787000" />
     </task>
+    <task id="LOCAL-00001" summary="first work">
+      <created>1669864931168</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669864931168</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,5 +80,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first work" />
+    <option name="LAST_COMMIT_MESSAGE" value="first work" />
   </component>
 </project>
