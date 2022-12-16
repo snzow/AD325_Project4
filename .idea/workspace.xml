@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1c3b1ec-3629-46b9-af31-1b1f52e1f4f6" name="Changes" comment="first work">
-      <change afterPath="$PROJECT_DIR$/src/Network.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Profile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProfileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProfileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adtpackage/ListInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adtpackage/ListInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphpackage/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphpackage/DirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphpackage/UndirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphpackage/UndirectedGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graphpackage/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphpackage/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphpackage/VertexInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphpackage/VertexInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +48,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
@@ -53,6 +62,10 @@
       <updated>1669860372067</updated>
       <workItem from="1669860373779" duration="4693000" />
       <workItem from="1670553366689" duration="3787000" />
+      <workItem from="1670789864917" duration="336000" />
+      <workItem from="1671062894425" duration="3934000" />
+      <workItem from="1671147224567" duration="4248000" />
+      <workItem from="1671166331214" duration="3647000" />
     </task>
     <task id="LOCAL-00001" summary="first work">
       <created>1669864931168</created>

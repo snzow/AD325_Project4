@@ -31,6 +31,8 @@ public class Vertex<T> implements VertexInterface<T>
         return label;
     } // end getLabel
 
+
+
     public boolean hasPredecessor()
     {
         return previousVertex != null;
@@ -75,6 +77,17 @@ public class Vertex<T> implements VertexInterface<T>
     {
         return label.toString();
     } // end toString
+
+    public void deleteEdge(VertexInterface<T> vertex){
+        int position = 0;
+        for(Edge p : edgeList){
+            if(p.getEndVertex().equals(vertex)){
+                p.getEndVertex().deleteEdge(this);
+                edgeList.remove(position);
+            }
+            position++;
+        }
+    }
 
     private class WeightIterator implements Iterator<Double>
     {

@@ -22,6 +22,9 @@ public class DirectedGraph<T> implements GraphInterface<T>
         return addOutcome == null; // Was addition to dictionary successful?
     } // end addVertex
 
+    public VertexInterface getVertex(T label){
+        return vertices.getValue(label);
+    }
     public boolean addEdge(T begin, T end, double edgeWeight)
     {
         boolean result = false;

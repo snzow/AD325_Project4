@@ -1,55 +1,110 @@
+import adtpackage.LinkedQueue;
 import graphpackage.UndirectedGraph;
+import graphpackage.Vertex;
+import graphpackage.VertexInterface;
 
-import java.util.HashMap;
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class ProfileManager {
-    UndirectedGraph<UserID> userGraph;
-    HashMap<String, UserID> userDB;
 
-    Profile currentUser;
+    public UndirectedGraph<Profile> userGraph;
+    public HashMap<String, Profile> userMap;
 
-    public ProfileManager(){
-        userGraph = new UndirectedGraph<UserID>();
-        userDB = new HashMap<String,UserID>();
+    public ArrayList<String> usernames;
+    public Profile currentUser;
+
+    public ProfileManager() {
+        userGraph = new UndirectedGraph<>();
+        userMap = new HashMap<>();
+        usernames = new ArrayList<>();
     }
 
-    public void createProfile(){
-        Scanner kb = new Scanner(System.in);
-        System.out.println("Enter Username: ");
-        String username = kb.nextLine();
-        System.out.println("Enter Password");
-        String password = kb.nextLine();
-        String passwordConfirm = null;
-        boolean firstTime = true;
-        while((password == null) || !password.equals(passwordConfirm)){
-            if(firstTime == false){
-                System.out.println("Incorrect, please try again");
-            }
-            System.out.println("Confirm Password: ");
-            passwordConfirm = kb.nextLine();
-            if(firstTime == true){
-                firstTime = false;
-            }
+    public Profile getCurrentUser(){
+        return currentUser;
+    }
 
+    public void setCurrentUser(Profile user){
+        currentUser = user;
+    }
+
+    public void addUser(String username){
+        if(usernames.contains(username)){
+            System.out.println("Username Taken");
+            return;
         }
-        Profile newUser = new Profile(username,password);
-        userDB.put(username,newUser.getID());
-        userGraph.addVertex(newUser.getID());
-        System.out.println("Profile Created, Welcome " + username);
-
+        Profile user = new Profile(username);
+        usernames.add(username);
+        userGraph.addVertex(user);
+        userMap.put(username,user);
+        user.setNode(userGraph.getVertex(user));
     }
 
-    public void createProfile(String username, String password){
-        Profile newUser = new Profile(username,password);
-
+    public String profileCreator(Scanner kb){
+        System.out.println("Please Enter A Username");
+        String username = kb.next();
+        System.out.println("Please Enter Your Age");
+        int age = kb.nextInt();
+        System.out.println("Please set your first one word status");
+        String status = kb.next();
+        addUser(username,age,status);
+        return username;
     }
 
-    public UndirectedGraph<UserID> getUserGraph() {
+    public void deleteProfile(){
+        userMap.remove(currentUser.getName());
+        usernames.remove(currentUser.getName());
+        VertexInterface<Profile> toDelete = userGraph.getVertex(getCurrentUser());
+        if(toDelete.hasNeighbor()){
+            Iterator<VertexInterface<Profile>> vertexIterator = toDelete.getNeighborIterator();
+            while(vertexIterator.hasNext()){
+                vertexIterator.next().deleteEdge(toDelete);
+            }
+        }
+        currentUser = null;
+    }
+    public void addUser(String username,int age, String status){
+        if(usernames.contains(username)){
+            System.out.println("Username Taken");
+            return;
+        }
+        Profile user = new Profile(username,age,status);
+        usernames.add(username);
+        userGraph.addVertex(user);
+        userMap.put(username,user);
+        user.setNode(userGraph.getVertex(user));
+    }
+
+    public void printAllProfiles(){
+        for(String s : usernames){
+            System.out.println(s);
+        }
+    }
+
+    public void printProfileWeb(Scanner kb){
+        LinkedQueue<VertexInterface> vertexQueue = new LinkedQueue<>();
+        VertexInterface<Profile> currentVertex = currentUser.getNode();
+        currentVertex.visit();
+        currentVertex.getLabel().printProfile(kb);
+        vertexQueue.enqueue(currentVertex);
+        while(!vertexQueue.isEmpty()){
+            currentVertex = vertexQueue.dequeue();
+            while(currentVertex.hasNeighbor()){
+                VertexInterface<Profile> nextNeighbor = currentVertex.getUnvisitedNeighbor();
+                if(nextNeighbor != null){
+                    nextNeighbor.visit();
+                    vertexQueue.enqueue(nextNeighbor);
+                    nextNeighbor.getLabel().printProfile(kb);
+                }
+            }
+        }
+    }
+
+    public UndirectedGraph<Profile> getUserGraph(){
         return userGraph;
     }
 
-    public HashMap<String, UserID> getUserDB() {
-        return userDB;
+    public HashMap<String,Profile> getUserMap() {
+        return userMap;
     }
 }
